@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech to Text Notes</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="text-center">
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <h1 class="mt-3">Speech to Text Notes</h1>
+        <p class="lead">Buat catatan dari suara Anda.</p>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Catatan Suara Baru</div>
+            <div class="card-body">
+              <p>Tekan tombol Mulai dan izinkan akses.</p>
+              <div class="form-group">
+                <textarea
+                  id="voiceNote"
+                  class="form-control"
+                  rows="5"
+                  placeholder="Your voice note will appear here..."
+                ></textarea>
+              </div>
+              <button id="startBtn" class="btn btn-primary">Start Voice</button>
+              <button id="stopBtn" class="btn btn-danger">Stop Voice</button>
+              <button id="saveBtn" class="btn btn-success">Save Note</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Catatan Suaraku</div>
+            <div class="card-body">
+              <ul id="notesList" class="list-group"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center mt-4">
+      <p>&copy; 2024 Speech to Text Notes</p>
+    </footer>
+    <script src="js/responsivevoice.js"></script>
+  </body>
+</html>
